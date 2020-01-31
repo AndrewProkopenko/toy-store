@@ -1,0 +1,111 @@
+.section { 
+    padding-bottom: 60px;
+    a { 
+        text-decoration: none;
+        transition: 200ms ease;
+        &:hover {  
+            color: lighten($primary-color, 8%) ;       
+            >div { 
+                
+                &:after { 
+                    background:  lighten($primary-color, 10%) ; 
+                }
+            }
+        }
+    }
+}
+
+.title-container {  
+    display: flex;
+    justify-content: center;
+    position: relative;
+    &::after { 
+        content: '';
+        position: absolute;
+        // right: 0;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 2px; 
+        background: $primary-color;
+    }
+    h2 { 
+        // height: 50px;
+        display: block;
+        position: relative;
+        text-transform: uppercase;
+        // font-size: 2rem;
+        color: $primary-color;
+        background: #fff;
+        font-weight: 500;
+        border: 1px solid $primary-color;
+        border-radius: 50vh;
+        padding: 10px 30px;
+        box-sizing: border-box;
+        margin: 0 auto;
+        transform: translateY(-50%);
+        z-index: 22;
+        
+    }
+} 
+
+.rec-item { 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    .image { 
+        text-align: center;
+        height: 200px;
+        img { 
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .rec-price { 
+        margin-top: 20px;
+        margin-bottom: 15px;
+        display: flex;
+        align-items: flex-start;
+        color: $primary-color;
+        >div { 
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            font-weight: 700;
+            white-space: nowrap;
+            display: flex;
+            align-items: flex-start;
+            height: 100%;
+            span:last-child { 
+                font-size: 1rem;
+                line-height: 1rem;
+            }
+            &:after { 
+                content : " ";
+                display: block;
+                min-height: 100%;
+                width: 4px;
+                background: $primary-color;
+                margin: 0 8px;
+            }
+        }
+        >p { 
+            height: 100%;
+            margin: 0;
+            text-transform: uppercase;
+            font-size: 1rem;
+            line-height: 1rem;
+            font-weight: 500;
+            // padding-right: 10px;
+
+        }
+    }
+   
+    .rec-title { 
+        text-align: center;
+        font-size: 1rem;
+        color: $secondary-color;
+    }
+}

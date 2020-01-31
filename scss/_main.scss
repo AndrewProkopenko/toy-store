@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap&subset=cyrillic');
+
+@import '../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import '../fonts/fontello_toy-shop/css/fontello.css';
+// @import '../fonts/bebasneue/bebasneue.css';
+
+
+html, body { 
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background: #fff;
+    font-family: 'Oswald', sans-serif;
+    // font-family: 'Bebas Neue', sans-serif;
+}
+
+
+$primary-color: #003f66;
+$secondary-color: #a1b8c7; 
+$footer-color: #688a9f;
+$btn-color: #ff6c00;
+
+
+// @function calcFluidFontSize($f-min, $f-max, $v-min, $v-max) {
+//     $k: ($f-max - $f-min)/($v-max - $v-min);
+//     $b: $f-min - $k * $v-min;
+  
+//     $b: $b * 1px;
+  
+//     @return calc( #{$k} * 100vw + #{$b} );
+// }
+
+.main-title-container { 
+    text-align: center;
+    padding: 0;
+}
+.main-title { 
+    display: inline-block;
+    padding: 0 15px;
+    // display: none;
+    // font-size: 40px;
+    font-size: 15vw;
+     
+    line-height: 15vw;
+    // line-height: 40px;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgba(239, 239, 239, 0.431);
+    margin: 0 auto;
+    user-select: none;
+}
