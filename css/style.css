@@ -4236,16 +4236,18 @@ html, body {
 }
 
 .main-title {
-  display: inline-block;
-  padding: 0 15px;
   font-size: 15vw;
   line-height: 15vw;
+  max-width: 100%;
+  display: inline-block;
+  padding: 0 15px;
   text-align: center;
   font-weight: 600;
   text-transform: uppercase;
   color: rgba(239, 239, 239, 0.431);
   margin: 0 auto;
   user-select: none;
+  white-space: normal;
 }
 
 .header-bg {
@@ -5035,11 +5037,6 @@ footer {
     height: 16px !important;
   }
 }
-@media screen and (max-width: 400px) {
-  .product-section .col-auto .rec-title {
-    display: none !important;
-  }
-}
 @media screen and (max-width: 500px) {
   .pagination-container .pagination-content .pagination-bnt {
     font-size: 0.8rem;
@@ -5083,11 +5080,11 @@ footer {
     font-size: 1rem !important;
   }
 
-  .sorting-row .sorting-item {
-    width: 50% !important;
-  }
   .sorting-row .sorting-item .rec-title {
     display: none;
+  }
+  .sorting-row .sorting-item .rec-price {
+    margin: 10px 0;
   }
 
   .product-photo {
@@ -5112,10 +5109,6 @@ footer {
     width: 50px;
     height: 50px;
   }
-
-  .product-section .col-auto {
-    width: 50% !important;
-  }
 }
 @media screen and (max-width: 770px) {
   .swiper-button-next {
@@ -5133,10 +5126,6 @@ footer {
   .sorting-column .sorting-item .rec-item .rec-title {
     display: none;
   }
-
-  .product-section .col-auto {
-    width: 33%;
-  }
 }
 @media screen and (max-width: 1000px) {
   .swiper-button-next {
@@ -5149,10 +5138,6 @@ footer {
 
   .product-photo .main-img img {
     min-height: 400px;
-  }
-
-  .product-section .col-auto {
-    width: 25%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -5240,6 +5225,17 @@ footer {
 @media screen and (min-width: 1400px) {
   .rec-price > p {
     line-height: 1.2rem;
+  }
+
+  .main-title {
+    font-size: 10vw;
+    line-height: 10vw;
+  }
+}
+@media screen and (min-width: 2500px) {
+  .main-title {
+    font-size: 7vw;
+    line-height: 7vw;
   }
 }
 
