@@ -1,5 +1,4 @@
 ;(function() { 
-        
     let sorting = document.querySelector('#sorting'),
     sortingLarge = document.querySelector('#sorting-large'),
     sortingList = document.querySelector('#sorting-list'); 
@@ -20,4 +19,4 @@
         sorting.classList.add('sorting-column');
     }
 
-}());
+})();

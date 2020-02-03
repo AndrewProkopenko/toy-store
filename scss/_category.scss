@@ -11,7 +11,9 @@
         cursor: pointer;
         font-weight: 500;
         position: relative;
-        &:hover {  
+        transition: 200ms ease;
+        &:hover {   
+            color: desaturate(lighten($primary-color, 10%), 30%) ; 
             ul.change-sort { 
                 display: block;
                 animation: sort 300ms ease forwards;
@@ -51,8 +53,12 @@
                 padding: 5px;
                 text-transform: uppercase;
                 white-space: nowrap;
+                transition: 300ms ease;
                 &:first-child { 
                     margin-top: 30px;
+                }
+                &:hover { 
+                    color: desaturate(lighten($primary-color, 30%), 80%) ; 
                 }
             }
         }

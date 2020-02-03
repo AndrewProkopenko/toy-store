@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Product</title>
+
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
       <!-- header start -->
@@ -252,29 +254,12 @@
 <!-- FOOTER END -->
 
  
-  <script src="js/script.js"></script>
-  
+  <script src="js/header_search.js"></script>
   <script src="node_modules/swiper/js/swiper.min.js"></script>
   <script src="js/swiper_custom.js"></script> 
+  <script src="js/product.js"></script>
   <script>
-    let productInfo = document.querySelectorAll('.product-info'),
-        moreInfo = document.querySelectorAll('.info-more');
-
-    let smallImage = document.querySelectorAll('.secondary-img img'), 
-        bigImage = document.querySelector('.main-img img'); 
- 
-    moreInfo.forEach( function(item, i) { 
-      moreInfo[i].addEventListener('click', () => { 
-        moreInfo[i].style.display = 'none'; 
-        productInfo[i].style.height = 'auto'; 
-      }) 
-    });
-
-    smallImage.forEach( function(item, i) { 
-        smallImage[i].addEventListener('click', () => { 
-            bigImage.src = smallImage[i].src;
-        })
-    })
+   
 
  
   </script>

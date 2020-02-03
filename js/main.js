@@ -20,7 +20,7 @@
         mainTitle.style.fontSize = fs + 'px';
         mainTitle.style.lineHeight = fs - 20  + 'px';
       }
-    } 
+    }  
       
   }  
 

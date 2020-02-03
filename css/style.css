@@ -4556,6 +4556,10 @@ footer {
   cursor: pointer;
   font-weight: 500;
   position: relative;
+  transition: 200ms ease;
+}
+.title-container.sort-container span:hover {
+  color: #175982;
 }
 .title-container.sort-container span:hover ul.change-sort {
   display: block;
@@ -4594,9 +4598,13 @@ footer {
   padding: 5px;
   text-transform: uppercase;
   white-space: nowrap;
+  transition: 300ms ease;
 }
 .title-container.sort-container span ul.change-sort li:first-child {
   margin-top: 30px;
+}
+.title-container.sort-container span ul.change-sort li:hover {
+  color: #668699;
 }
 .title-container.sort-container b {
   height: 100%;
